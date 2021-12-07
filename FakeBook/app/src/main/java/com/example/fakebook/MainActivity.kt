@@ -58,20 +58,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         resPassword.setOnClickListener {
-            val email = email.text.toString()
-            FirebaseAuth.getInstance().sendPasswordResetEmail(email).addOnCompleteListener { task ->
-                if(task.isSuccessful){
-                    Toast.makeText(this, "Please Check E-mail", Toast.LENGTH_SHORT).show()
-                } else {
-                    Toast.makeText(this, "Something's wrong please try again", Toast.LENGTH_SHORT).show()
-                }
-
-            }
+            startActivity(Intent(this, PassReset::class.java))
 
         }
     }
     private fun homePage(){
         startActivity(Intent(this, LoggedIn::class.java))
+        finish()
     }
 
 

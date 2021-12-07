@@ -3,9 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/sandr/AndroidStudioProjects/FakeBook/app/src/main/res/layout/activity_logged_in.xml" value="0.490036231884058" />
-        <entry key="..\:/Users/sandr/AndroidStudioProjects/FakeBook/app/src/main/res/layout/activity_main.xml" value="0.490036231884058" />
+        <entry key="..\:/Users/sandr/AndroidStudioProjects/FakeBook/app/src/main/res/drawable/ic_launcher_background.xml" value="0.36019736842105265" />
+        <entry key="..\:/Users/sandr/AndroidStudioProjects/FakeBook/app/src/main/res/layout/activity_home_fragment.xml" value="0.34868421052631576" />
+        <entry key="..\:/Users/sandr/AndroidStudioProjects/FakeBook/app/src/main/res/layout/activity_logged_in.xml" value="0.33" />
+        <entry key="..\:/Users/sandr/AndroidStudioProjects/FakeBook/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/sandr/AndroidStudioProjects/FakeBook/app/src/main/res/layout/activity_pass_reset.xml" value="0.33" />
+        <entry key="..\:/Users/sandr/AndroidStudioProjects/FakeBook/app/src/main/res/layout/activity_passreset.xml" value="0.4773550724637681" />
+        <entry key="..\:/Users/sandr/AndroidStudioProjects/FakeBook/app/src/main/res/layout/activity_profile_fragment.xml" value="0.35" />
         <entry key="..\:/Users/sandr/AndroidStudioProjects/FakeBook/app/src/main/res/layout/activity_registration.xml" value="0.490036231884058" />
+        <entry key="..\:/Users/sandr/AndroidStudioProjects/FakeBook/app/src/main/res/layout/activity_settings_fragment.xml" value="0.34868421052631576" />
+        <entry key="..\:/Users/sandr/AndroidStudioProjects/FakeBook/app/src/main/res/layout/fragment_profile.xml" value="0.35" />
+        <entry key="..\:/Users/sandr/AndroidStudioProjects/FakeBook/app/src/main/res/menu/bottom_menu.xml" value="0.35" />
       </map>
     </option>
   </component>

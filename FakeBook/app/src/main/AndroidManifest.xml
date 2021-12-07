@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FakeBook">
         <activity
+            android:name=".SettingsFragment"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileFragment"
+            android:exported="true" />
+        <activity
+            android:name=".HomeFragment"
+            android:exported="true" />
+        <activity
+            android:name=".PassReset"
+            android:exported="true" />
+        <activity
+            android:name=".Passreset"
+            android:exported="true" />
+        <activity
             android:name=".LoggedIn"
             android:exported="true" />
         <activity

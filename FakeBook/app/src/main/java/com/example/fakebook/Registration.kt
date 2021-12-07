@@ -34,10 +34,19 @@ class Registration : AppCompatActivity() {
                 Toast.makeText(this, "Please fill all bars and try again", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+            if (pCheck != rpCheck){
+                Toast.makeText(this, "Passwords are not the same please try again", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+            if (pCheck.length < 6){
+                Toast.makeText(this, "Password has to be at least with 6 symbols", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(eCheck, pCheck)
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful){
                         startActivity(Intent(this, MainActivity::class.java))
+                        finish()
                     } else{
                         Toast.makeText(this, "Something's wrong try again", Toast.LENGTH_SHORT).show()
                     }
