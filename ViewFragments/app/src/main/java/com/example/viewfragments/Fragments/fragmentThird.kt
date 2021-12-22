@@ -23,11 +23,17 @@ class fragmentThird: Fragment(R.layout.fragment_third) {
         addButton = view.findViewById(R.id.addButton)
         addedText = view.findViewById(R.id.addedText)
         clearButton = view.findViewById(R.id.clearButton)
+        val sharedPreferences = this.activity?.getSharedPreferences("THIS_ONE", 0)
+        val texts = sharedPreferences?.getString("NOTES", "")
+        addedText.text = texts
         addButton.setOnClickListener {
             val note = enterText.text.toString()
             val text = addedText.text.toString()
             val result = note + "\n" + text
             addedText.text = result
+            sharedPreferences?.edit()
+                ?.putString("NOTES", result)
+                ?.apply()
 
         }
         clearButton.setOnClickListener {

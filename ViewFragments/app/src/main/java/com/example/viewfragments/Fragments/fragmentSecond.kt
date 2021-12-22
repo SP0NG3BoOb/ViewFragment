@@ -16,5 +16,7 @@ class fragmentSecond: Fragment(R.layout.fragment_second) {
         imageView = view.findViewById(R.id.imageView)
 
 
+
+
     }
 }

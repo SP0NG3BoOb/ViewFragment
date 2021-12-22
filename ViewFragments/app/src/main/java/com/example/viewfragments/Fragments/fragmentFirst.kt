@@ -22,6 +22,10 @@ class fragmentFirst : Fragment(R.layout.fragment_first) {
                 Toast.makeText(activity, "enter url and try again", Toast.LENGTH_SHORT).show()
 
             } else{
+                val sharedPreferences = this.activity?.getSharedPreferences("this", 0)
+                val images = sharedPreferences?.getString("URLS", "")
+                sharedPreferences?.edit()
+                    ?.apply()
 
 
             }
