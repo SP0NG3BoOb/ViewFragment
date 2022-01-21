@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -15,6 +16,7 @@ import com.example.healthy_life.R
 class FoodFragment: Fragment(R.layout.fragment_food) {
     private lateinit var recyclerViewFoodAdapter: RecyclerViewFoodAdapter
     private lateinit var recyclerView: RecyclerView
+    private lateinit var foodButton: Button
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -23,11 +25,6 @@ class FoodFragment: Fragment(R.layout.fragment_food) {
         recyclerViewFoodAdapter = RecyclerViewFoodAdapter(getData())
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = recyclerViewFoodAdapter
-
-
-
-
-
     }
 
     }
@@ -40,6 +37,7 @@ class FoodFragment: Fragment(R.layout.fragment_food) {
             Food(
                 "1 Boiled Egg",
                 155
+
             )
 
         )

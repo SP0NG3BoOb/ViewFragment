@@ -19,6 +19,9 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var passwordEdit: EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        if (FirebaseAuth.getInstance().currentUser != null){
+            startActivity(Intent(this, HomeActivity::class.java))
+        }
         setContentView(R.layout.activity_login)
         init()
         registerListeners()

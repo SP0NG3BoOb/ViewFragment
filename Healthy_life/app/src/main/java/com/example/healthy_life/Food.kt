@@ -4,6 +4,5 @@ import android.widget.Button
 
 data class Food(
     var foodName: String,
-    var cal : Int
-
+    var cal : Int,
 )
